@@ -1,0 +1,87 @@
+---
+import CardsView from "./CardsView"
+
+const cards =[
+{
+    title: "Explore an Open World",
+    image: "/assets/game-info-panel-01.jpg",
+    description:
+      "The wizarding world awaits you. Freely roam Hogwarts, Hogsmeade, the Forbidden Forest, and the surrounding Overland area.",
+  },
+  {
+    title: "Be the Witch or Wizard You Want to be",
+    image: "/assets/game-info-panel-02.jpg",
+    description:
+      "Learn spells, brew potions, grow plants, and tend to magical beasts along your journey. Get sorted into your house, forge relationships, and master skills to become the witch or wizard you want to be.",
+  },
+  {
+    title: "Experience a New Wizarding World Adventure",
+    image: "/assets/game-info-panel-03.jpg",
+    description:
+      "Experience the wizarding world in an unexplored era to uncover a hidden truth from its past. Battle against trolls, Dark Wizards, goblins, and more as you face a dangerous villain threatening the fate of the wizarding world.",
+  },
+  {
+    title: "TITLE 4",
+    image: "/assets/game-info-panel-01.jpg",
+    description: "descripcion 4",
+  },
+  {
+    title: "TITLE 5",
+    image: "/assets/game-info-panel-01.jpg",
+    description: "descripcion 5",
+  },
+]
+---
+
+<div class="container">
+    <div class="card">
+        <p class="container-card">    Miel 100% Natural. NO usamos nada que no estuviera disponible de forma natural para las abejas.Miel 100% Natural. NO usamos nada que no estuviera disponible de forma natural para las abejas.Miel 100% Natural. NO usamos nada que no estuviera disponible de forma natural para las abejas..</p>
+    </div>
+</div>
+
+<section>
+  <!--<div class="trailer">
+    <img src="/assets/abeja.png" alt=""/>  cambiar 
+  </div>-->
+
+
+  <div class="cardsContainer">
+    <CardsView cards={cards} client:load/>
+  </div>
+
+</section>
+
+
+<style>
+
+body {
+  background-color: black;
+  color: white; 
+}
+
+.container {
+  max-width: 70%;
+  margin: 0 auto;
+  position: relative;
+  top: -310px; 
+
+}
+
+.card {
+  font-weight: 600;
+  line-height: 32px;
+  color: hsla(33, 15%, 88%, 0.959);
+  font-size: 16px;
+  text-align: center;
+  max-width: 100%; 
+}
+
+.container-card {
+  position: relative;
+  border: 2px solid transparent;
+  background: linear-gradient(71deg, rgba(8, 5, 9, 0.6), rgba(8, 5, 9, 0.4), rgba(26, 23, 28, 0.5), rgba(8, 5, 9, 0.7));
+  border-radius: 25px;
+  padding: 25px;
+}
+
+</style>
