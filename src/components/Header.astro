@@ -1,6 +1,9 @@
 <section>
   <img src="/assets/hero1.png"></img> <!--video src="/assets/hero.mp4" autoplay loop-->
-  <div class="logo"><img src="/assets/hero-logo.png"></div>
+  <div class="logo">
+    <img src="/assets/hero-logo.png" class="hero-logo">
+  <!-- <img src="/assets/hero-jar.png" class="hero-jar"></div> -->
+
 </section>
 
 
@@ -14,16 +17,35 @@
   video {
 
   }
-  
   .logo {
-    position:relative;
-    top: -2400px; /*-450*/
-    text-align: center;
-  }
+  position: relative;
+  top: -2400px; 
+  text-align: center;
+}
 
-  .logo img {
-    filter:drop-shadow(100) ;
-    filte
-    width:600px;
-  }
+.logo img {
+  position: absolute;
+  filter: drop-shadow(10px 10px 20px rgba(0, 0, 0, 0.2));
+  width: calc(600px * 0.9); 
+  top: 0; 
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.logo .hero-logo {
+  z-index: 200;
+}
+
+/*
+.logo .hero-jar {
+  position: absolute;
+  filter: drop-shadow(10px 10px 20px rgba(0, 0, 0, 0.2)); 
+  filter: opacity(0.6);
+  width: calc(600px * 1.07); 
+  top: 250px; 
+  left: 50%;
+  transform: translate(-50%, -50%);
+} */
+
+  
 </style>

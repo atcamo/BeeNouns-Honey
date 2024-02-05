@@ -1,34 +1,37 @@
-<ul>
-  <slot/>
-</ul>
-<img class="nav-bar" src="/assets/bar-left.png"/>
+
+<div > 
+  <ul class="back-menu">
+    <slot/>
+  </ul>
+<div/>
 
 
 <style>
   ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-      display: flex;
-      gap: 5px;
-      width: 50%;
-      z-index: 100;
-      position: relative;
-      margin-bottom: -108px;
-      background-image: url(/assets/nav-bar-bg-left.webp);
-      background: linear-gradient(
-        90deg,
-        rgba(151, 125, 9, 0.3),
-        rgba(94, 84, 40, 0.4) 58%,
-        rgba(112, 108, 88, 0)
-      );
-      background-repeat: no-repeat;
-    }
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 5px;
+    width: 33%;
+    z-index: 100;
+    position: relative;
+    margin-bottom: -108px;
+    background-image: url(../../assets/nav-bar-bg-left.webp);
+    background: linear-gradient(
+      90deg,
+      rgba(23, 47, 73, 0.5),
+      rgba(23, 47, 73, 0.5) 58%,
+      rgba(23, 47, 73, 0)
+    );
+    background-repeat: no-repeat;
+  }
 
-    .nav-bar {
-      position: relative;
-      top: 97px;
-      z-index: 100;
-      width: 33%;
-    }
+  .nav-bar {
+    position: relative;
+    top: 97px;
+    z-index: 100;
+    width: 33%;
+  }
+
 </style>
